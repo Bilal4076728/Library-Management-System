@@ -1,2 +1,25 @@
-# Library-Management-System
-A command-line Library Management System built in Python using OOP and inheritance. Supports issuing/returning books, tracks availability, and uses type-aware JSON persistence for both eBooks and physical books.
+# Library Management System (Python)
+
+A command-line application to manage a library's book inventory — built in Python to practice inheritance and type-aware data handling.
+
+## Features
+- Add books as either eBooks or Physical Books (using inheritance)
+- Issue and return books, tracking availability status
+- View all books in the library
+- Persistent data storage using JSON, correctly restoring each book's original type on load
+- Menu-driven interface for easy navigation
+
+## Concepts Used
+- Object-Oriented Programming with Inheritance (`Book` base class, `EBook` and `PhysicalBook` subclasses)
+- `isinstance()`-based type checking for saving/loading mixed object types from JSON
+- File Handling (reading/writing JSON)
+- Exception Handling (input validation)
+
+## How to Run
+```bash
+python library_management.py
+```
+
+## Tech Stack
+- Python 3
+- JSON (for data persistence)
